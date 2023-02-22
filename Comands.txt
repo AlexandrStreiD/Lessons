@@ -1,0 +1,5 @@
+dotnet new console - Создать новый проект
+dotnet run - Запустить проект
+
+Команды C#
+Console.WriteLine("Текст); - вывожит написанный Текст
