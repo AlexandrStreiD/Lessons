@@ -10,3 +10,8 @@ new Random().Next(min, max) - дает случайное число от min д
 name.ToLower=="Маша" - переносит все буквы переменной name в нижний регистр
 
 Console.SetCursorPosition(10,4) - Команда которая рисует (отступ от левого края, отступ от верхнего края)
+
+string? Chislo = Console.ReadLine(); int Chint = int.Parse(Chislo); - Переводит из стринга в инт
+ int.Parse(Console.ReadLine()) - сразу переводит введенную строку в число
+
+ int result =(int)Math.Pow(Chint, 2); - Функция преобразующая переменной Chint в степень 2(в квадрат)
