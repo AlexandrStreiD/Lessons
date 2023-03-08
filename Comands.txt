@@ -36,3 +36,26 @@ else
 {   Console.WriteLine($"{x} -> НЕТ");------------------------------> пример применения переменной bool
 }
 ==================================================================================
+int num = GetNumberFromUser("Введите целое число: ", "Ошибка ввода!");
+// Выводит в консоль сообщение message,
+// преобразовывает введённую пользователем строку в число типа int.
+// В случае ошибки выводит в консоль сообщение errorMessage
+int GetNumberFromUser(string message, string errorMessage)
+{
+    while (true)
+    {
+        Console.Write(message);
+        bool isCorrect = int.TryParse(Console.ReadLine(), out int userNumber);
+        if (isCorrect)
+            return userNumber;
+        Console.WriteLine(errorMessage);
+    }
+}
+==================================================================================
+ for (int i = 1; i <= A; i++)
+    {
+        Console.Write($"{Math.Pow(i, 3)} ");
+    }
+==================================================================================
+Console.WriteLine($"[{String.Join(",", array)}]"); - выводит массив array с запятыми
+==================================================================================
