@@ -59,3 +59,31 @@ int GetNumberFromUser(string message, string errorMessage)
 ==================================================================================
 Console.WriteLine($"[{String.Join(",", array)}]"); - выводит массив array с запятыми
 ==================================================================================
+//31. Задайте массив из 12 элементов, заполненный случайными числами из промежутка [-9, 9]. 
+//Найдите сумму отрицательных и положительных элементов массива.
+Console.Clear();
+int[] array = GetArray(12, -9, 9);
+Console.WriteLine(String.Join(" ", array));
+int positiveSum = GetPositiveSum(array);
+int negativeSum = GetNegativeSum(array);
+Console.WriteLine($"Positive sum = {positiveSum}, negative sum = {negativeSum} ");
+int GetPositiveSum(int[] arr)
+{
+    int positiveSum = 0;
+    foreach (int el in arr)  ------------ Перебор всех элементов массива arr
+    {
+        if (el > 0) positiveSum += el;
+    }
+    return positiveSum;
+}
+// Возвращает сумму отрицательных чисел массива arr
+int GetNegativeSum(int[] arr)
+{
+    int negativeSum = 0;
+    foreach (int el in arr)
+    {
+        negativeSum += el < 0 ? el : 0;   ----------- ТЕРНАРНЫЙ ОПЕРАТОР (el < 0 ? el : 0). На каждый оператор проверяем el с 0. Есои el меньше 0, то прибавляется el, если больше, то прибавляется 0 (el : 0)
+    }
+    return negativeSum;
+}
+==================================================================================
