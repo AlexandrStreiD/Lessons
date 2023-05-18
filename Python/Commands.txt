@@ -1,0 +1,88 @@
+Выделить в комменты
+cntrl K
+
+Округление
+round(a*b, N) - N количество цифр после запятой
+
+n1 = 'fff\'fd"f"d' - \ дает поставить в ковычках '
+
+Выводы
+print(a,' - ',b, ' - ', c)
+print(f"{a} - {b} - {c}")
+print("{} - {} - {}".format(a,b,c))
+
+Вывод типа
+print(type(c))
+
+Ввод с клавы
+a = input()
+b =  int(input('Введите 2 число: '))
+
+Сравнения 
+a = 1 < 4 and 5 > 2
+print(a)
+Выедет True
+a = 1 == 2
+print(a)
+Выедет False
+a = 1 < 3 < 5 < 10
+print(a)
+Выедет True
+
+IF , ELSE
+if a<b:
+    a='dfd'
+else:
+    b='dfds'
+
+ELIF ИНАЧЕ ЕСЛИ, в конце всегда ELSE
+if b<a:
+    a='dfd'
+elif a>b:
+    b='dfds'
+elif a==b:
+    b='dfds'
+else:
+    a=a+b
+
+Цикл FOR
+a = 'qwerty'
+for i in a:
+    print(i)
+с RANGE
+line = ""
+for i in range(5):
+    line=""
+    for j in range(5):
+            line += "*"
+    print(line)
+
+СТРОКИ
+text = 'fdsgdfg fdg fdsgwer adsf arrt fdfas afg'
+print(len(text))   -  ПОЗВОЛЯЕТ УЗНАТЬ РАЗМЕР СТРОКИ
+
+text = 'fdsgdfg fdg fdsgwer adsf arrt fdfas afg'
+print('fdg' in text) - РЕЗУЛЬТАТ ЛИБО TRUE либо FALSE
+
+print(text.lower()) - ПЕРЕВОДИТ ВСЕ В НИЖНИЙ РЕГИСТР
+print(text.upper()) - ПЕРЕВОДИТ ВСЕ В ВЕРХНИЙ РЕГИСТР
+print(text.replace('fdg','FDG')) - Меняет 1 аргумент на 2 аргуемнт
+
+МАССИВЫ
+text = 'СЪешь что нибудь там'
+print(text[0]) - С
+print(text[1]) - Ъ
+print(text[len(text)-1]) - ВЫВЕДЕТ ПОСЛЕДНЮЮ БУКВУ м
+print(text[-1]) - ВЫВЕДЕТ ПОСЛЕДНЮЮ БУКВУ м
+print(text[:]) - выводим все символы
+print(text[:2]) - выводим с 0 по 1 элемент
+print(text[len(text)-3:]) - выводим "там
+print(text[10:]) - выводим "нибудь там" (с 10 симв до конца)
+print(text[2:9]) - выводим "ешь что"
+print(text[2:-11]) - выводим "ешь что"
+print(text[0:len(text):6]) - выводим "Счба"
+print(text[::6]) - выводим "Счба"
+print(text[ОТКУДА: ДОКУДА : С КАКИМ ШАГОМ])
+
+text = text[2:9] + text[-5] + text[:2]
+print(text) - ВЫВОДИМ "ешь чтоьСЪ"
