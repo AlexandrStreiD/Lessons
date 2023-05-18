@@ -1,0 +1,42 @@
+https://github.com/GiliazovaPullrequests/VersionControl_Seminar3/pull/389
+инет
+auFZhSqJ лог
+ef5g3
+ТВ
+0309445402
+983120
+
+
+Настройка IPTV на роутере
+IPTV/VLAN:
+Включить
+Режим:
+Указать вручную
+Идентификатор VLAN для Интернет:
+760
+Приоритет VLAN для Интернет:
+0
+Интернет VLAN 802.1Q Тег
+Идентификатор VLAN для VoIP:
+123
+Приоритет VLAN для VoIP:
+0
+VoIP VLAN 802.1Q Тег
+Идентификатор VLAN для IPTV:
+3111
+Приоритет VLAN для IPTV:
+0
+IPTV VLAN 802.1Q Тег
+Идентификатор Multicast VLAN для IPTV:
+0
+Приоритет Multicast VLAN для IPTV:
+0
+Включить Multicast VLAN для IPTV
+LAN1:
+Интернет
+LAN2:
+Интернет
+LAN3:
+Интернет
+LAN4:
+IPTV
